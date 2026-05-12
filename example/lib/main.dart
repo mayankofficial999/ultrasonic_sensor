@@ -10,7 +10,6 @@ void main() {
 
 class MyApp extends StatefulWidget {
   const MyApp({super.key});
-
   @override
   State<MyApp> createState() => _MyAppState();
 }
@@ -18,7 +17,6 @@ class MyApp extends StatefulWidget {
 class _MyAppState extends State<MyApp> {
   String _platformVersion = 'Unknown';
   final _ultrasonicSensorPlugin = UltrasonicSensor();
-
   @override
   void initState() {
     super.initState();
@@ -35,6 +33,11 @@ class _MyAppState extends State<MyApp> {
           await _ultrasonicSensorPlugin.getPlatformVersion() ?? 'Unknown platform version';
     } on PlatformException {
       platformVersion = 'Failed to get platform version.';
+    }
+    try {
+      print(await _ultrasonicSensorPlugin.getReadings() ?? 'Error');
+    } on PlatformException {
+      platformVersion = 'Failed to get readings.';
     }
 
     // If the widget was removed from the tree while the asynchronous platform

@@ -1,0 +1,105 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Flutter: Run Plugin Example",
+      "type": "dart",
+      "request": "launch",
+      "cwd": "${workspaceFolder}/example",
+      "program": "${workspaceFolder}/example/lib/main.dart",
+      "args": ["--dart-define=FLUTTER_WEB_USE_SKIA=true"],
+      "flutterMode": "debug"
+    },
+    {
+      "name": "Flutter: Run Plugin Example (Release)",
+      "type": "dart",
+      "request": "launch",
+      "cwd": "${workspaceFolder}/example",
+      "program": "${workspaceFolder}/example/lib/main.dart",
+      "flutterMode": "release"
+    },
+    {
+      "name": "Flutter: Run Plugin Example (Profile)",
+      "type": "dart",
+      "request": "launch",
+      "cwd": "${workspaceFolder}/example",
+      "program": "${workspaceFolder}/example/lib/main.dart",
+      "flutterMode": "profile"
+    },
+    {
+      "name": "Flutter: Run Plugin Example (Android)",
+      "type": "dart",
+      "request": "launch",
+      "cwd": "${workspaceFolder}/example",
+      "program": "${workspaceFolder}/example/lib/main.dart",
+      "deviceId": "android",
+      "flutterMode": "debug"
+    },
+    {
+      "name": "Flutter: Run Plugin Example (iOS)",
+      "type": "dart",
+      "request": "launch",
+      "cwd": "${workspaceFolder}/example",
+      "program": "${workspaceFolder}/example/lib/main.dart",
+      "deviceId": "ios",
+      "flutterMode": "debug"
+    },
+    {
+      "name": "Flutter: Run Plugin Example (Web)",
+      "type": "dart",
+      "request": "launch",
+      "cwd": "${workspaceFolder}/example",
+      "program": "${workspaceFolder}/example/lib/main.dart",
+      "deviceId": "web-server",
+      "flutterMode": "debug",
+      "args": ["--web-renderer", "html"]
+    },
+    {
+      "name": "Flutter: Run Plugin Tests",
+      "type": "dart",
+      "request": "launch",
+      "cwd": "${workspaceFolder}",
+      "program": "${workspaceFolder}/test/",
+      "args": ["--coverage"]
+    },
+    {
+      "name": "Flutter: Run Example Tests",
+      "type": "dart",
+      "request": "launch",
+      "cwd": "${workspaceFolder}/example",
+      "program": "${workspaceFolder}/example/test/",
+      "args": ["--coverage"]
+    },
+    {
+      "name": "Flutter: Run Integration Tests",
+      "type": "dart",
+      "request": "launch",
+      "cwd": "${workspaceFolder}/example",
+      "program": "${workspaceFolder}/example/integration_test/",
+      "args": ["--coverage"]
+    },
+    {
+      "name": "Dart: Run Current File",
+      "type": "dart",
+      "request": "launch",
+      "program": "${file}"
+    },
+    {
+      "name": "Dart: Debug Current File",
+      "type": "dart",
+      "request": "launch",
+      "program": "${file}",
+      "debugSettings": {
+        "showDartDeveloperLogs": true,
+        "debugExternalLibraries": false
+      }
+    },
+    {
+      "name": "Flutter: Attach to Process",
+      "type": "dart",
+      "request": "attach",
+      "cwd": "${workspaceFolder}/example",
+      "vmServiceUri": "http://localhost:8181/"
+    }
+  ]
+}

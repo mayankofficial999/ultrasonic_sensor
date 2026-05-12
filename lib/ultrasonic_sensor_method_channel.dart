@@ -14,4 +14,10 @@ class MethodChannelUltrasonicSensor extends UltrasonicSensorPlatform {
     final version = await methodChannel.invokeMethod<String>('getPlatformVersion');
     return version;
   }
+
+  @override
+  Future<String?> getReadings() async {
+    final value = await methodChannel.invokeMethod<String>('getReadings');
+    return value;
+  }
 }

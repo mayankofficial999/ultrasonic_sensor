@@ -1,0 +1,17 @@
+{
+  "java.project.sourcePaths": [
+    "android/src/main/kotlin",
+    "android/src/main/java"
+  ],
+  "java.project.outputPath": "android/build",
+  "java.project.referencedLibraries": [
+    "example/android/app/build/intermediates/flutter/**/*.jar",
+    "example/build/host/outputs/repo/**/*.jar"
+  ],
+  "java.compile.nullAnalysis.mode": "automatic",
+  "java.configuration.maven.userSettings": null,
+  "java.configuration.checkProjectSettingsExclusions": false,
+  "java.import.gradle.enabled": true,
+  "java.import.gradle.wrapper.enabled": true,
+  "java.import.gradle.java.home": "/Library/Java/JavaVirtualMachines/jdk-17.jdk/Contents/Home"
+}

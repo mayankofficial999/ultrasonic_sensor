@@ -1,0 +1,187 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Flutter: Get Dependencies",
+      "type": "shell",
+      "command": "flutter",
+      "args": ["pub", "get"],
+      "group": "build",
+      "presentation": {
+        "echo": true,
+        "reveal": "always",
+        "focus": false,
+        "panel": "shared"
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "Flutter: Run Tests",
+      "type": "shell",
+      "command": "flutter",
+      "args": ["test"],
+      "group": "test",
+      "presentation": {
+        "echo": true,
+        "reveal": "always",
+        "focus": false,
+        "panel": "shared"
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "Flutter: Analyze",
+      "type": "shell",
+      "command": "flutter",
+      "args": ["analyze"],
+      "group": "build",
+      "presentation": {
+        "echo": true,
+        "reveal": "always",
+        "focus": false,
+        "panel": "shared"
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "Flutter: Format",
+      "type": "shell",
+      "command": "dart",
+      "args": ["format", "."],
+      "group": "build",
+      "presentation": {
+        "echo": true,
+        "reveal": "always",
+        "focus": false,
+        "panel": "shared"
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "Flutter: Clean",
+      "type": "shell",
+      "command": "flutter",
+      "args": ["clean"],
+      "group": "build",
+      "presentation": {
+        "echo": true,
+        "reveal": "always",
+        "focus": false,
+        "panel": "shared"
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "Flutter: Build Plugin Example (Android)",
+      "type": "shell",
+      "command": "flutter",
+      "args": ["build", "apk"],
+      "group": "build",
+      "presentation": {
+        "echo": true,
+        "reveal": "always",
+        "focus": false,
+        "panel": "shared"
+      },
+      "problemMatcher": [],
+      "options": {
+        "cwd": "${workspaceFolder}/example"
+      }
+    },
+    {
+      "label": "Flutter: Build Plugin Example (iOS)",
+      "type": "shell",
+      "command": "flutter",
+      "args": ["build", "ios"],
+      "group": "build",
+      "presentation": {
+        "echo": true,
+        "reveal": "always",
+        "focus": false,
+        "panel": "shared"
+      },
+      "problemMatcher": [],
+      "options": {
+        "cwd": "${workspaceFolder}/example"
+      }
+    },
+    {
+      "label": "Flutter: Run Plugin Example",
+      "type": "shell",
+      "command": "flutter",
+      "args": ["run"],
+      "group": "build",
+      "presentation": {
+        "echo": true,
+        "reveal": "always",
+        "focus": false,
+        "panel": "shared"
+      },
+      "problemMatcher": [],
+      "options": {
+        "cwd": "${workspaceFolder}/example"
+      }
+    },
+    {
+      "label": "Android: Build Plugin (Gradle)",
+      "type": "shell",
+      "command": "./gradlew",
+      "args": ["build"],
+      "group": "build",
+      "presentation": {
+        "echo": true,
+        "reveal": "always",
+        "focus": false,
+        "panel": "shared"
+      },
+      "problemMatcher": ["$gradle"],
+      "options": {
+        "cwd": "${workspaceFolder}/android"
+      }
+    },
+    {
+      "label": "Android: Clean Plugin (Gradle)",
+      "type": "shell",
+      "command": "./gradlew",
+      "args": ["clean"],
+      "group": "build",
+      "presentation": {
+        "echo": true,
+        "reveal": "always",
+        "focus": false,
+        "panel": "shared"
+      },
+      "problemMatcher": [],
+      "options": {
+        "cwd": "${workspaceFolder}/android"
+      }
+    },
+    {
+      "label": "iOS: Build Plugin (Xcode)",
+      "type": "shell",
+      "command": "xcodebuild",
+      "args": [
+        "-workspace",
+        "Runner.xcworkspace",
+        "-scheme",
+        "Runner",
+        "-configuration",
+        "Debug",
+        "-sdk",
+        "iphonesimulator",
+        "build"
+      ],
+      "group": "build",
+      "presentation": {
+        "echo": true,
+        "reveal": "always",
+        "focus": false,
+        "panel": "shared"
+      },
+      "problemMatcher": [],
+      "options": {
+        "cwd": "${workspaceFolder}/example/ios"
+      }
+    }
+  ]
+}

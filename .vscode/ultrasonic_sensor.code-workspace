@@ -1,0 +1,52 @@
+{
+  "folders": [
+    {
+      "name": "Flutter Plugin (Root)",
+      "path": "."
+    },
+    {
+      "name": "Android Platform",
+      "path": "./android"
+    },
+    {
+      "name": "Example App",
+      "path": "./example"
+    }
+  ],
+  "settings": {
+    // Flutter Configuration
+    "dart.flutterSdkPath": "/Users/mayanksharma/Documents/flutter",
+    "dart.flutterSdkPaths": ["/Users/mayanksharma/Documents/flutter"],
+
+    // Java Configuration for Android Platform
+    "java.configuration.runtimes": [
+      {
+        "name": "JavaSE-17",
+        "path": "/Library/Java/JavaVirtualMachines/jdk-17.jdk/Contents/Home",
+        "default": true
+      }
+    ],
+    "java.jdt.ls.java.home": "/Library/Java/JavaVirtualMachines/jdk-17.jdk/Contents/Home",
+
+    // Android Platform Specific Settings
+    "java.import.gradle.enabled": true,
+    "java.import.gradle.wrapper.enabled": true,
+    "java.import.gradle.java.home": "/Library/Java/JavaVirtualMachines/jdk-17.jdk/Contents/Home",
+
+    // Terminal Configuration
+    "terminal.integrated.env.osx": {
+      "JAVA_HOME": "/Library/Java/JavaVirtualMachines/jdk-17.jdk/Contents/Home",
+      "ANDROID_HOME": "/Users/mayanksharma/Library/Android/sdk",
+      "ANDROID_SDK_ROOT": "/Users/mayanksharma/Library/Android/sdk",
+      "PATH": "/Users/mayanksharma/Documents/flutter/bin:/Users/mayanksharma/Library/Android/sdk/platform-tools:/Users/mayanksharma/Library/Android/sdk/tools:/Users/mayanksharma/Library/Android/sdk/tools/bin:/Library/Java/JavaVirtualMachines/jdk-17.jdk/Contents/Home/bin:${env:PATH}"
+    }
+  },
+  "extensions": {
+    "recommendations": [
+      "dart-code.flutter",
+      "dart-code.dart-code",
+      "vscjava.vscode-java-pack",
+      "vscjava.vscode-gradle"
+    ]
+  }
+}

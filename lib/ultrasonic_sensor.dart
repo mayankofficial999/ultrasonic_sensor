@@ -5,4 +5,7 @@ class UltrasonicSensor {
   Future<String?> getPlatformVersion() {
     return UltrasonicSensorPlatform.instance.getPlatformVersion();
   }
+  Future<String?> getReadings() {
+    return UltrasonicSensorPlatform.instance.getReadings();
+  }
 }
